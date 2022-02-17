@@ -11,14 +11,14 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@Api(value = "Film", tags = "Progetto per cercare tra svariati film")
+@Api(value = "Film", tags = "Servizio creato per cercare tra svariati film")
 @EnableSwagger2
 @Configuration
 public class SwaggerConfig {
 
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder().title("Database Cinematografico")
-				.description("Qui puoi trovare qualche film da guardare, la lista è in continuo aggiornamento")
+				.description("Qui puoi trovare qualche film da guardare, la lista è in continuo aggiornamento!")
 				.version("1.0.9").license("apache License 2.0")
 				.licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
 				.contact(new Contact("Daniele Carraro", "www.google.it", "da@libero.it")).build();
